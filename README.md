@@ -14,3 +14,21 @@ Remember, it's self-paced so feel free to take a break! ☕️
 
 &copy; 2025 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
 
+## Pruebas
+
+- **Instalar dependencias:** crea y activa un entorno virtual y luego instala las dependencias:
+
+	```bash
+	python -m venv .venv
+	source .venv/bin/activate
+	pip install -r requirements.txt
+	```
+
+- **Ejecutar tests:** ejecuta las pruebas de backend con `pytest`:
+
+	```bash
+	pytest tests/
+	```
+
+- **Notas:** las pruebas usan `fastapi.testclient` y el conjunto de pruebas restaura el estado en memoria entre cada test.
+
